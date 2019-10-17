@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhiteTransparent80">#acffffff</color>
+    <color name="colorWhiteTransparent50">#7fffffff</color>
+    <color name="colorWhiteTransparent20">#40ffffff</color>
+    <color name="colorTransparent">#00ffffff</color>
+
+    <color name="summer">#44eebd82</color>
+    <color name="fall">#44d8d27e</color>
+    <color name="winter">#44a1c1da</color>
+    <color name="spring">#448da64b</color>
+
+    <color name="today">#4b82ff</color>
+    <color name="greyed_out">#c7c7c7</color>
+
+
+    <color name="correct">#7dff86</color>
+    <color name="wrong">#ff7d7d</color>
+</resources>

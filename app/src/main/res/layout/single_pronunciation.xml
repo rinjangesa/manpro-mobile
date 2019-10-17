@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/single_pronunciation_sound"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/button_blue" />
+
+    <TextView
+        android:id="@+id/single_pronunciation_japan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/single_pronunciation_sound"
+        android:text="Arigatou" />
+
+    <TextView
+        android:id="@+id/single_pronunciation_meaning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/single_pronunciation_japan"
+        android:layout_toEndOf="@id/single_pronunciation_sound"
+        android:text="Meaning" />
+
+</RelativeLayout>

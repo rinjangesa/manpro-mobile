@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="language">Ganti Bahasa</string>
+    <string name="english">Bahasa Inggris</string>
+    <string name="indonesia">Bahasa Indonesia</string>
+    <string name="mute">Diam</string>
+    <string name="help">Bantuan</string>
+    <string name="logout">Keluar</string>
+    <string name="changepass">Ganti Sandi</string>
+    <string name="sound">Suara</string>
+</resources>

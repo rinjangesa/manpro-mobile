@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="beranda">Beranda</string>
+    <string name="kelas">Kelas</string>
+    <string name="pemberitahuan">Pemberitahuan</string>
+    <string name="acara">Acara</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="profil">Profil</string>
+</resources>

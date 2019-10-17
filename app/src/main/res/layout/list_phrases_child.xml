@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/child_phrases_japan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Japan"
+        android:textAppearance="?android:attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/child_phrases_romaji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/child_phrases_japan"
+        android:text="Romaji"
+        android:textAppearance="?android:attr/textAppearanceListItem" />
+
+    <TextView
+        android:id="@+id/child_phrases_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/child_phrases_romaji"
+        android:text="Desc"
+        android:textAppearance="?android:attr/textAppearanceListItem" />
+
+</RelativeLayout>

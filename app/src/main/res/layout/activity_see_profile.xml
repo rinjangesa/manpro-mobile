@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/see_profile_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeeProfileActivity">
+
+    <ImageView
+        android:id="@+id/see_profile_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_wall" />
+
+    <LinearLayout
+        android:id="@+id/see_profile_header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/custom_container"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorTransparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/button_home" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0.9"
+            android:background="@color/colorTransparent">
+
+        </View>
+
+        <ImageButton
+            android:id="@+id/see_profile_setting"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorTransparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/button_setting"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/see_profile_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/see_profile_header"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_container"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:id="@+id/see_profile_content_header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorAccent"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/see_profile_avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/placeholder_char"
+                app:civ_border_color="#FFFFFF"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/see_profile_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:text="Title"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/see_profile_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/see_profile_title"
+                android:layout_centerInParent="true"
+                android:text="Username"
+                android:textColor="@color/colorWhite" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/see_profile_char_close_up"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/list_see_profile_message"
+            android:layout_below="@id/see_profile_content_header"
+            android:layout_toStartOf="@+id/see_profile_scores"
+            android:scaleType="fitCenter"
+            android:src="@drawable/placeholder_char" />
+
+        <LinearLayout
+            android:id="@+id/see_profile_scores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/see_profile_content_header"
+            android:layout_marginEnd="3dp"
+            android:background="@color/colorWhiteTransparent80"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <TextView
+                android:id="@+id/endless_kanji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Endless Kanji Score" />
+
+            <TextView
+                android:id="@+id/kanji_last_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last" />
+
+            <TextView
+                android:id="@+id/kanji_best_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best" />
+
+            <TextView
+                android:id="@+id/endless_phrase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Endless Phrase Score" />
+
+            <TextView
+                android:id="@+id/phrase_last_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last" />
+
+            <TextView
+                android:id="@+id/phrase_best_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best" />
+
+            <TextView
+                android:id="@+id/endless_grammar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Endless Grammar Score" />
+
+            <TextView
+                android:id="@+id/grammar_last_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last" />
+
+            <TextView
+                android:id="@+id/grammar_best_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Best" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/see_profile_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/see_profile_scores"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
+            android:background="@color/colorWhiteTransparent80"
+            android:maxLines="2"
+            android:padding="6dp"
+            android:text=" \n " />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_see_profile_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/see_profile_message_send"
+            android:layout_below="@id/see_profile_status"
+            android:layout_margin="5dp" />
+
+        <EditText
+            android:id="@+id/see_profile_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginStart="5dp"
+            android:layout_toStartOf="@id/see_profile_message_send" />
+
+        <Button
+            android:id="@+id/see_profile_message_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="5dp"
+            android:text="Send" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

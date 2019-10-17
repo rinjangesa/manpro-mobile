@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizResultActivity">
+
+    <ImageView
+        android:id="@+id/result_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_wall" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/quiz_result_footer"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_result_upper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/custom_container"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/result_score_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/result_score_txt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Your score" />
+
+            <TextView
+                android:id="@+id/result_score_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:text="0"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/result_money_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/result_money_txt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="50dp"
+                android:text="Money" />
+
+            <TextView
+                android:id="@+id/result_money_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="52.5dp"
+                android:layout_marginTop="10dp"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/result_exp_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/result_exp_txt"
+                android:layout_marginStart="50dp"
+                android:text="EXP" />
+
+            <TextView
+                android:id="@+id/result_exp_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="52.5dp"
+                android:layout_marginTop="10dp"
+                android:text="0" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/ballons_lottie"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/balloons" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_result_lower"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/custom_container"
+            android:padding="5dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_result_quiz"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/quiz_result_footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:scaleType="centerInside"
+            android:src="@drawable/button_home"
+            android:text="Home" />
+
+        <Button
+            android:id="@+id/btn_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_yellow"
+            android:scaleType="centerInside"
+            android:src="@drawable/button_home"
+            android:text="Kanji"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_selected_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_green"
+            android:scaleType="centerInside"
+            android:src="@drawable/button_home"
+            android:text="Category List" />
+
+        <Button
+            android:id="@+id/btn_try_again"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="7dp"
+            android:layout_marginStart="7dp"
+            android:layout_weight="1"
+            android:background="@color/colorTransparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/button_home"
+            android:text="Home"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

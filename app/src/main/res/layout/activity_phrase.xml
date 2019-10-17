@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhraseActivity">
+
+    <ImageView
+        android:id="@+id/phrase_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_wall" />
+
+    <Button
+        android:id="@+id/endless_phrase"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_margin="7dp"
+        android:background="@drawable/button_n5"
+        android:fontFamily="@font/pomeranian"
+        android:text="Endless Phrases" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_phrase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_home"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/endless_phrase"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="7dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:background="@color/colorTransparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/button_home"
+        android:text="Home" />
+
+</RelativeLayout>

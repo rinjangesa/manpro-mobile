@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_n5">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="1dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/japan"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/pomeranian"
+            android:text="English" />
+
+        <TextView
+            android:id="@+id/japan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:fontFamily="@font/honoka"
+            android:text="Jepang"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/romaji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/japan"
+            android:layout_marginStart="25dp"
+            android:text="Romaji" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

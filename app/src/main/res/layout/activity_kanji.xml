@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".KanjiActivity">
+
+    <ImageView
+        android:id="@+id/kanji_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_wall" />
+
+    <Button
+        android:id="@+id/endless_kanji"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentStart="true"
+        android:layout_margin="7dp"
+        android:background="@drawable/button_n5"
+        android:fontFamily="@font/pomeranian"
+        android:text="Endless"
+        android:textSize="20sp" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@id/endless_kanji"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/endless_kanji"
+        android:layout_marginStart="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/colorAccent"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animation_infinity" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_alignBottom="@id/endless_kanji"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/endless_kanji"
+        android:layout_marginEnd="10dp"
+        app:lottie_autoPlay="true"
+        app:lottie_colorFilter="@color/colorAccent"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animation_infinity" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_home"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/endless_kanji"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="7dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/kanji_n5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_n5"
+            android:fontFamily="@font/pomeranian"
+            android:scaleType="fitXY"
+            android:text="Kanji N5"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/kanji_n4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_n4"
+            android:fontFamily="@font/pomeranian"
+            android:scaleType="fitXY"
+            android:text="Kanji N4"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/kanji_n3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_n3"
+            android:fontFamily="@font/pomeranian"
+            android:scaleType="fitXY"
+            android:text="Kanji N3"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/kanji_n2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_n2"
+            android:fontFamily="@font/pomeranian"
+            android:scaleType="fitXY"
+            android:text="Kanji N2"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/kanji_n1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_n1"
+            android:fontFamily="@font/pomeranian"
+            android:scaleType="fitXY"
+            android:text="Kanji N1"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:background="@color/colorTransparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/button_home"
+        android:text="Home" />
+
+</RelativeLayout>

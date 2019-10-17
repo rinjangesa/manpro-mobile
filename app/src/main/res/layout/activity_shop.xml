@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopActivity">
+
+    <ImageView
+        android:id="@+id/shop_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_wall" />
+
+    <LinearLayout
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/custom_container"
+        android:checkedButton="@id/radio_character"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/radio_character"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_yellow"
+            android:onClick="onShopRadioButtonClicked"
+            android:text="Character" />
+
+        <Button
+            android:id="@+id/radio_wallpaper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_green"
+            android:onClick="onShopRadioButtonClicked"
+            android:text="Wallpaper" />
+
+        <Button
+            android:id="@+id/radio_decoration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_blue"
+            android:onClick="onShopRadioButtonClicked"
+            android:text="Decoration" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_shop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/radio_group"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_container"
+        android:foregroundGravity="center"
+        android:padding="7dp"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:id="@+id/shop_footer"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/btn_home"
+        android:background="@drawable/custom_container"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="3dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_coin" />
+
+        <TextView
+            android:id="@+id/shop_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@color/colorTransparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/button_home"
+        android:text="Home" />
+
+</RelativeLayout>

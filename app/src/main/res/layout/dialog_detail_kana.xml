@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/back_btn"
+        android:background="@drawable/custom_container">
+
+        <TextView
+            android:id="@+id/detail_kana_speed_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:text="Speed" />
+
+        <SeekBar
+            android:id="@+id/detail_kana_animation_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/detail_kana_speed_text"
+            android:max="3" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/detail_kana_animation"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/custom_border"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/detail_kana_romaji"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/detail_kana_sound"
+            android:layout_marginStart="13dp"
+            android:gravity="center"
+            android:text="A"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:id="@+id/detail_kana_sound"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/icon_speaker" />
+
+        <TextView
+            android:id="@+id/font_variations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_kana_animation"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
+            android:background="@color/colorWhiteTransparent80"
+            android:text="Font Variations"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:id="@+id/layout_variation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/font_variations"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
+            android:background="@color/colorWhiteTransparent80"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/detail_kana1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="人"
+                android:textSize="38sp" />
+
+            <TextView
+                android:id="@+id/detail_kana2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/honoka"
+                android:gravity="center"
+                android:text="人"
+                android:textSize="38sp" />
+
+            <TextView
+                android:id="@+id/detail_kana3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/aihara"
+                android:gravity="center"
+                android:text="人"
+                android:textSize="38sp" />
+
+            <TextView
+                android:id="@+id/detail_kana4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/hakushu"
+                android:gravity="center"
+                android:text="人"
+                android:textSize="38sp" />
+
+            <TextView
+                android:id="@+id/detail_kana5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/pomeranian"
+                android:gravity="center"
+                android:text="人"
+                android:textSize="38sp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/close_btn"
+            android:layout_below="@id/layout_variation"
+            android:layout_marginEnd="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorWhiteTransparent80"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/detail_kana_stroke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stroke" />
+
+            <TextView
+                android:id="@+id/detail_kana_example"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detail_kana_stroke" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Close" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

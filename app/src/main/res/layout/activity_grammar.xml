@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GrammarActivity">
+
+    <ImageView
+        android:id="@+id/grammar_wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/placeholder_wall" />
+
+    <Button
+        android:id="@+id/endless_grammar"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="7dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_n5"
+        android:fontFamily="@font/pomeranian"
+        android:text="Endless Grammar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_home"
+        android:layout_below="@id/endless_grammar"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="7dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/grammar_basic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_n5"
+            android:fontFamily="@font/pomeranian"
+            android:text="Basic Grammar" />
+
+        <Button
+            android:id="@+id/grammar_inter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_n4"
+            android:fontFamily="@font/pomeranian"
+            android:text="Intermediate Grammar" />
+
+        <Button
+            android:id="@+id/grammar_expert"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_n3"
+            android:fontFamily="@font/pomeranian"
+            android:text="Expert Grammar" />
+
+        <Button
+            android:id="@+id/grammar_master"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_n2"
+            android:fontFamily="@font/pomeranian"
+            android:text="Master Grammar" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="7dp"
+        android:background="@color/colorTransparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/button_home"
+        android:text="Home" />
+
+</RelativeLayout>
